@@ -28,5 +28,5 @@ app.layout = dbc.Container([
 ], className='vh-100 d-flex flex-column')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    # app.run(port='8501', host='0.0.0.0')
+    # app.run(debug=True)
+    app.run(port='8501', host='0.0.0.0')
