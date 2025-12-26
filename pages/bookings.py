@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 register_page(__name__, name='Бронь', path='/')
 
 layout = dbc.Container([
-    html.H1('Бронь', className='display-5 text-center border-1 border-bottom pb-2 bg-primary text-light rounded-bottom'),
+    html.H1('Бронь', className='display-5 text-center border-1 border-bottom pb-2 pt-3'),
     dbc.Stack([
         dbc.Button('Себе', id='self-btn', className='btn-primary'),
         dbc.Button('Другому человеку', id='self-btn', className='btn-secondary'),

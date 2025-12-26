@@ -6,9 +6,6 @@ app = Dash(__name__,
            external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
-    html.Div(
-        page_container,
-    ),
     html.Nav([
         html.Link(
             rel='stylesheet',
@@ -24,7 +21,10 @@ app.layout = dbc.Container([
             html.Li(dcc.Link([html.I(className='bi bi-person-workspace'),
                     html.P('КИР', className='m-0 p-0 fw-bold')], href='/kir'))
         ])
-    ], className='mt-auto')
+    ]),
+    html.Div(
+        page_container,
+    ),
 ], className='vh-100 d-flex flex-column')
 
 if __name__ == '__main__':
